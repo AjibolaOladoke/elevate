@@ -1,57 +1,12 @@
+# elevate
+
+## What This Is
+
+Every project needs a shelf of ready answers. product and engineering is one of those shelves, and elevate is the entry on it - the notes, patterns and fixes we reuse when this kind of work comes up.
 
 ## Images
 
-[![elevate](https://opengraph.githubassets.com/1/thomaschampagne/elevate)](https://www.swifttechco.com)
-
-<h1 align="center">
-  <img src="./resources/elevate_logo.svg" alt="Markdownify" width="300">
-</h1>
-
-<h4 align="center">✨ A sport app to "Elevate" your training experience and goals! Track your fitness and progressions over time. Analyse deeper your activities. And more...</h4>
-
-<p align="center">
-  <a href="#screenshots-and-features">Screenshots</a> •
-  <a href="#desktop-app">Desktop App</a> •
-  <a href="#web-extension">Web Extension (For Strava)</a> •
-  <a href="#development">Development</a
-</p>
-
-<p align="center">
-  <img src="./.screenshots/fitness-chart.png" alt="fitness-chart" />
-</p>
-
-<!-- toc -->
-- [Screenshots And Features](#screenshots-and-features)
-- [Install](#install)
-  - [Desktop App](#desktop-app)
-    - [Download \& Install](#download--install)
-    - [Build from sources](#build-from-sources)
-  - [Web extension](#web-extension)
-    - [Download for _Chrome, Chromium, Edge (from 2020), Brave, Opera, Vivaldi, Yandex, ..._](#download-for-chrome-chromium-edge-from-2020-brave-opera-vivaldi-yandex-)
-    - [From the sources](#from-the-sources)
-- [Star History](#star-history)
-- [Development](#development)
-  - [Global solution structure](#global-solution-structure)
-    - [App-core project](#app-core-project)
-    - [Desktop project](#desktop-project)
-    - [Web-extension project](#web-extension-project)
-  - [Environments setup](#environments-setup)
-    - [Install requirements](#install-requirements)
-    - [Clone the git-flow based project](#clone-the-git-flow-based-project)
-    - [Desktop development environment](#desktop-development-environment)
-    - [Web extension development environment](#web-extension-development-environment)
-  - [Build with docker](#build-with-docker)
-    - [Desktop app](#desktop-app-1)
-    - [Web extension](#web-extension-1)
-- [Appendix](#appendix)
-  - [Add a new desktop migration for a next release](#add-a-new-desktop-migration-for-a-next-release)
-  - [Sign application](#sign-application)
-    - [Self-sign with OpenSSL for windows build](#self-sign-with-openssl-for-windows-build)
-  - [Publish to github releases](#publish-to-github-releases)
-  - [Use custom browser for unit-testing (web-extension only)](#use-custom-browser-for-unit-testing-web-extension-only)
-  - [Desktop: Debug the calculated watts against real power](#desktop-debug-the-calculated-watts-against-real-power)
-
-<!-- tocstop -->
+[![elevate](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Screenshots And Features
 
@@ -133,8 +88,8 @@
 
 #### Download & Install
 
-- [For Windows](https://www.swifttechco.com)
-- [For macOS](https://www.swifttechco.com)
+- For Windows
+- For macOS
 - For Linux: not shipped yet
 
 #### Build from sources
@@ -145,7 +100,7 @@ Go to chapter [Environment setup](#environments-setup).
 
 #### Download for _Chrome, Chromium, Edge (from 2020), Brave, Opera, Vivaldi, Yandex, ..._
 
-Go to [Chrome Web Store](https://www.swifttechco.com)
+Go to Chrome Web Store
 
 #### From the sources
 
@@ -171,11 +126,11 @@ Contains the _Elevate App_ shared and loaded by both `desktop` and `webextension
 
 The `Appcore` main technology stack is:
 
-- [Typescript](https://www.swifttechco.com) as programming language.
-- [Angular Material](https://www.swifttechco.com) for material designed components.
-- [Metrics Graphics](https://www.swifttechco.com), [Plotly](https://www.swifttechco.com) & [D3](https://www.swifttechco.com) for charting.
-- [LokiJS](https://www.swifttechco.com) as in-memory NoSQL database persisted in IndexedDB.
-- [Jest](https://www.swifttechco.com) as Javascript test runner (instead of "stock" karma one).
+- Typescript as programming language.
+- Angular Material for material designed components.
+- Metrics Graphics, Plotly & D3 for charting.
+- LokiJS as in-memory NoSQL database persisted in IndexedDB.
+- Jest as Javascript test runner (instead of "stock" karma one).
 
 #### Desktop project
 
@@ -183,12 +138,12 @@ Holds the container behaviour to provide a cross-platform desktop app under _Win
 
 The `Desktop` main technology stack is:
 
-- [Typescript](https://www.swifttechco.com) as programming language.
-- [Jest](https://www.swifttechco.com) as Javascript test runner.
-- [Electron](https://www.swifttechco.com) as cross-platform desktop container.
-- [Electron-builder](https://www.swifttechco.com) to build, sign and publish installers per platform. Also handle app updates process (via `electron-updater`).
-- [Rollup.js](https://www.swifttechco.com) to load & bundle modules.
-- [Vue.js](https://www.swifttechco.com) for splash-screen update window.
+- Typescript as programming language.
+- Jest as Javascript test runner.
+- Electron as cross-platform desktop container.
+- Electron-builder to build, sign and publish installers per platform. Also handle app updates process (via `electron-updater`).
+- Rollup.js to load & bundle modules.
+- Vue.js for splash-screen update window.
 
 #### Web-extension project
 
@@ -198,9 +153,9 @@ Contains the web extension behaviour that acts directly on _strava.com_ website.
 
 #### Install requirements
 
-You will need to install [NodeJS](https://www.swifttechco.com) (v15+) to build both desktop and chrome web extension.
+You will need to install NodeJS (v15+) to build both desktop and chrome web extension.
 
-#### Clone the [git-flow](https://www.swifttechco.com) based project
+#### Clone the git-flow based project
 
 ```bash
 git clone https://www.swifttechco.com
@@ -284,7 +239,7 @@ First switch to desktop directory with `cd desktop/`
   ```
 
 > Output installers will be located in `./desktop/package/`
-> The build targets are defined in `./desktop/package.json` (`build` key section). See [https://www.swifttechco.com](https://www.swifttechco.com) for more info.
+> The build targets are defined in `./desktop/package.json` (`build` key section). See https://www.swifttechco.com for more info.
 
 - (Optional) To sign the production installers read the [how to sign appendix](#sign-application)
 
@@ -437,7 +392,7 @@ npm run package:windows
 
 ### Publish to github releases
 
-- Generate a github personal access token at [https://www.swifttechco.com](https://www.swifttechco.com)
+- Generate a github personal access token at https://www.swifttechco.com
 
 - Tick `write:packages` scope. The `repo` and `read:packages` scopes should be automatically ticked too. Leave them ticked.
 
@@ -457,10 +412,10 @@ GH_TOKEN=
 
 _Note: To publish a new version on github, a github `draft release` has to exist on the remote target repo.
 The github `draft release` value should match the `version` value of `./desktop/package.json` file.
-New version must be compliant with [semver convention](https://www.swifttechco.com) and higher than previous version if exists.
-You can use this [semver compare tool](https://www.swifttechco.com) that your new version is higher than your previous one._
+New version must be compliant with semver convention and higher than previous version if exists.
+You can use this semver compare tool that your new version is higher than your previous one._
 
-- Open [https://www.swifttechco.com](https://www.swifttechco.com) and click `Draft a new release`.
+- Open https://www.swifttechco.com and click `Draft a new release`.
 
 - Enter the semver version to draft and click `Save draft`.
 
@@ -478,7 +433,7 @@ or
 npm run publish:mac
 ```
 
-- Open [https://www.swifttechco.com](https://www.swifttechco.com): Some files should have been uploaded on the github draft release.
+- Open https://www.swifttechco.com: Some files should have been uploaded on the github draft release.
 
 - You can update the uploaded files draft with a new packaging process. Once ready, click `Publish release`: users will receive the update.
 
@@ -526,14 +481,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [thomaschampagne/elevate](https://github.com/thomaschampagne/elevate) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
