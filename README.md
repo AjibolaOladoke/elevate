@@ -6,7 +6,7 @@ Every project needs a shelf of ready answers. product and engineering is one of 
 
 ## Images
 
-[![elevate](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![elevate](images/preview.png)](https://github.com/Swift-Tech-Co/elevate)
 
 ## Screenshots And Features
 
@@ -109,7 +109,7 @@ Go to chapter [Environment setup](#environments-setup).
 ## Star History
 
 <p align="center">
-  <img src="https://www.swifttechco.com)](https://www.star-history.com/#thomaschampagne/elevate&Date" alt="Star History" />
+  <img src="https://github.com/Swift-Tech-Co/elevate)](https://www.star-history.com/#thomaschampagne/elevate&Date" alt="Star History" />
 </p>
 
 ## Development
@@ -158,7 +158,7 @@ You will need to install NodeJS (v15+) to build both desktop and chrome web exte
 #### Clone the git-flow based project
 
 ```bash
-git clone https://www.swifttechco.com
+git clone https://github.com/Swift-Tech-Co/elevate
 ```
 
 or
@@ -239,7 +239,7 @@ First switch to desktop directory with `cd desktop/`
   ```
 
 > Output installers will be located in `./desktop/package/`
-> The build targets are defined in `./desktop/package.json` (`build` key section). See https://www.swifttechco.com for more info.
+> The build targets are defined in `./desktop/package.json` (`build` key section). See https://github.com/Swift-Tech-Co/elevate for more info.
 
 - (Optional) To sign the production installers read the [how to sign appendix](#sign-application)
 
@@ -302,7 +302,6 @@ npm run clean
 ### Build with docker
 
 #### Desktop app
-
 
 #### Web extension
 
@@ -392,7 +391,7 @@ npm run package:windows
 
 ### Publish to github releases
 
-- Generate a github personal access token at https://www.swifttechco.com
+- Generate a github personal access token at https://github.com/Swift-Tech-Co/elevate
 
 - Tick `write:packages` scope. The `repo` and `read:packages` scopes should be automatically ticked too. Leave them ticked.
 
@@ -415,7 +414,7 @@ The github `draft release` value should match the `version` value of `./desktop/
 New version must be compliant with semver convention and higher than previous version if exists.
 You can use this semver compare tool that your new version is higher than your previous one._
 
-- Open https://www.swifttechco.com and click `Draft a new release`.
+- Open https://github.com/Swift-Tech-Co/elevate and click `Draft a new release`.
 
 - Enter the semver version to draft and click `Save draft`.
 
@@ -433,7 +432,7 @@ or
 npm run publish:mac
 ```
 
-- Open https://www.swifttechco.com: Some files should have been uploaded on the github draft release.
+- Open https://github.com/Swift-Tech-Co/elevate: Some files should have been uploaded on the github draft release.
 
 - You can update the uploaded files draft with a new packaging process. Once ready, click `Publish release`: users will receive the update.
 
@@ -453,7 +452,7 @@ module.exports = {
             base: "Chromium",
             flags: [
                 "--no-sandbox",
-                // See https://www.swifttechco.com
+                // See https://github.com/Swift-Tech-Co/elevate
                 "--headless",
                 "--disable-gpu",
                 // Without a remote debugging port, Google Chrome exits immediately.
@@ -485,13 +484,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/elevate
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [thomaschampagne/elevate](https://github.com/thomaschampagne/elevate) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
